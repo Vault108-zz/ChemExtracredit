@@ -1,0 +1,200 @@
+    <html>
+    <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+     
+     <script type="text/javascript">
+    $(function () {
+        $("#clickme").toggle(function () {
+            $(this).parent().parent().animate({left:'0px'}, {queue: false, duration: 500});
+        }, function () {
+            $(this).parent().parent().animate({left:'-480px'}, {queue: false, duration: 500});
+        });
+      });
+      //]]>
+      </script>
+      <style type="text/css">
+
+      #slideout {
+        
+        position: relative;
+        width: 500px;
+        height: 600px;
+        top: 45%;
+        left:-480px;
+
+      }
+      
+     #containclickme {
+      background: white;
+        float:right;
+        height: 80px;
+        width:20px;
+      }
+
+      #clickme {
+        float: right;
+        height: 200px;
+        width: 20px;
+        background: ;
+      }
+
+      #slidecontent {
+        float:left;
+      }
+
+      p2
+      {
+            text-align: center;
+            color: red;
+      }
+      p3
+      {
+            color:blue;
+      }
+      p4
+      {
+            color: #667766;
+      }
+      table
+      {
+        text-align:center;
+      }
+      }
+      /*]]>*/
+      </style>
+
+      <title></title>
+      <style type="text/css">
+    td.c11 {background-color: #55CC87}
+      td.c10 {background-color: #66AAFF}
+      td.c9 {background-color: #00DDBB}
+      td.c8 {background-color: #00EE00}
+      th.c7 {background-color: #99BBAD}
+      th.c6 {background-color: #DD9999}
+      th.c5 {background-color: #DDAACC}
+      th.c4 {background-color: #FFAA88}
+      th.c3 {background-color: #F3F300}
+      th.c2 {background-color: #FFAA00}
+      div.c1 {text-align: center; text-decoration: underline}
+      </style>
+    </head>
+
+    <body>
+      <div id="slideout">
+        <div id="slidecontent">
+          <table id="ST" border="1px" class="Series" cellspacing="px">
+            <tbody>
+              <tr>
+                <th colspan="2">
+                  <div class="c1">
+                    Metals
+                  </div>
+                </th>
+              </tr>
+
+              <tr>
+                <th id="Alkali" class="Alkali c2">Alkali Metals</th>
+              </tr>
+
+              <tr>
+                <th id="Alkaline" class="Alkaline c3">Alkaline Earth Metals</th>
+              </tr>
+
+              <tr>
+                <th id="Lanthanoid" class="Lanthanoid c4">Lanthanoids</th>
+              </tr>
+
+              <tr>
+                <th id="Actinoid" class="Actinoid c5">Actinoids</th>
+              </tr>
+
+              <tr>
+                <th id="Transition" class="Transition c6">Transition metals</th>
+              </tr>
+
+              <tr>
+                <th id="Poor" class="Poor c7">Post-transition metals</th>
+              </tr>
+            </tbody>
+          </table><br>
+          <br>
+
+          <table id="Series1" border="2px" class="Series" cellspacing="2px">
+            <tbody>
+              <tr>
+                <th align="right" colspan="4">
+                  <div class="c1">
+                    Nonmetals
+                  </div>
+                </th>
+              </tr>
+
+              <tr>
+                <td id="Nonmetal" class="Nonmetal c8"><a>Other<br>
+                Nonmetals </a></td>
+
+                <td id="Halogen" class="Halogen c9"><a> Halogens </a></td>
+
+                <td id="Noble" class="Noble c10"><a> Noble<br>
+                 Gases </a></td>
+              </tr>
+            </tbody>
+          </table><br>
+
+          <table id="Series2" border="2px" class="Series" cellspacing="4px">
+            <tr>
+              <th>Other</th>
+            </tr>
+
+            <tr>
+              <td id="Metalloid" border="2px" class="Metalloid c11" colspan="2">
+              <a>Metalloids</a></td>
+            </tr>
+          </table><br>
+          <br>
+
+          <table id="e" class="e" border="1px" cellspacing="0px">
+            <tbody>
+              <tr>
+                <th></th>
+
+                <th>State</th>
+              </tr>
+
+              <tr>
+                <td>C</td>
+
+                <td>Solid</td>
+              </tr>
+
+              <tr class="tg-eve1n">
+                <td>Hg</td>
+
+                <td><p2>Liquid</p2></td>
+              </tr>
+
+              <tr>
+                <td><p3>H</p3></td>
+
+                <td><p3>Gas</p3></td>
+              </tr>
+
+              <tr class="tg-even1">
+                <td><p4>Rf<p4></td>
+
+                <td><p4>Unknown</p4></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="containclickme">
+          <div id="clickme">
+            K<br>
+            E<br>
+            Y
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
